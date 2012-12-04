@@ -9,6 +9,9 @@
 			<region id="rgVideo"/>
 			<region id="rgBotaoInfo" right="5%" bottom="80%" width="100" height="100" zIndex="3" />
 			</region>
+			<region id="rgTxtPOA" right="5%" bottom="80%" width="100" height="100"  zIndex="3" />
+			<region id="rgTxtGRU" right="5%" bottom="80%" width="100" height="100"  zIndex="3" />
+			<region id="rgTxtJPA" right="5%" bottom="80%" width="100" height="100"  zIndex="3" />
 		</regionBase>
 		
 		<!-- Descritores -->
@@ -16,18 +19,69 @@
 			<descriptor id="dTV" region="rgTV" />
 			<descriptor id="dVideo" region="rgVideo">							
 			</descriptor>
-			<descriptor id="dImgInfo" region="rgBotaoInfo">
+			<descriptor id="dImgInfo" region="rgBotaoInfo" explicitDur="10s">
 			</descriptor>
-		</descriptorBase>		
+			<descriptor id="dTxtPOA" region="rgTxtPOA" explicitDur="5s">		
+			</descriptor>
+			<descriptor id="dTxtGRU" region="rgTxtGRU" explicitDur="5s">		
+			</descriptor>
+			<descriptor id="dTxtJPA" region="rgTxtJPA" explicitDur="5s">		
+			</descriptor>							
+		</descriptorBase>	
+		
+		<connectorBase>
+			<causalConnector id="onBeginStart">
+				<simpleCondition role="onBegin" />
+				<simpleAction role="start" />
+			</causalConnector>
+			<causalConnector id="onEndStop">
+				<simpleCondition role="onEnd" />
+				<simpleAction role="stop" />
+			</causalConnector>
+			<causalConnector id="onBeginStart_vDelay">
+				<connectorParam name="vDelay" />
+					<simpleCondition role="onBegin" />
+					<simpleAction role="start" delay="$vDelay" max="unbounded" qualifier="par" />
+			</causalConnector>
+		</connectorBase>
+	
 	</head>
 
 	<body>
 		
+	
+		
 	<port id="pInicio" component="video"/>
 	<port id="pImgPularInfo" component="imgInfo" />
 	
+	
 	<media id="video" src="media/video.mp4" descriptor="dVideo"/>
-	<media id="imgInfo" src="media/interactive.png" descriptor="dImgInfo"/>
+	<media id="txtGRU" src="media/gru.txt" descriptor="dTxtGRU"/>
+	<media id="txtPOA" src="media/poa.txt" descriptor="dTxtPOA"/>
+	<media id="txtJPA" src="media/jpa.txt" descriptor="dTxtJPA"/>
+	<media id="imgInfo" src="media/interactive.png" descriptor="dImgInfo" />
+	
+	<link id="lVideAberturaIniciaPOA" xconnector="onBeginStart_vDelay">
+		<linkParam name="vDelay" value="15s" />
+		<bind role="onBegin" component="video" />
+		<bind role="start" component="txtPOA" >
+		</bind>
+	</link>	
+	
+	<link id="lVideAberturaIniciaGRU" xconnector="onBeginStart_vDelay">
+		<linkParam name="vDelay" value="10s" />
+		<bind role="onBegin" component="video" />
+		<bind role="start" component="txtGRU" >
+		</bind>
+	</link>
+
+	<link id="lVideAberturaIniciaJPA" xconnector="onBeginStart_vDelay">
+		<linkParam name="vDelay" value="10s" />
+		<bind role="onBegin" component="video" />
+		<bind role="start" component="txtJPA" >
+		</bind>
+	</link>			
+
 
 	</body>
 </ncl>
