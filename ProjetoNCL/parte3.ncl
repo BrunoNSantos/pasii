@@ -23,8 +23,6 @@
 				<simpleAction role="stop" />	
 			</causalConnector>
 
-
-
 			<causalConnector id="timeStart1">
 				<connectorParam name="vDelay1" />
 				<simpleCondition role="onBegin" />
@@ -53,13 +51,7 @@
 			<property name="height" value="80"/>
 			<property name="width" value="80"/>
 		</media>
-
 		<media id="menu" src="media/menu.png" descriptor="dImagem" />
-
-
-
-
-
 
 		<media id="temperaturaGRU" src="media/gru.txt" descriptor="dImagem" >
 			<property name="fontSize" value="20"/>
@@ -75,9 +67,6 @@
 			<property name="fontSize" value="20"/>
 			<property name="fontWeight" value="bold"/>
 		</media>
-
-
-
 
 		<link xconnector="onKeySelectionStart">
 			<bind role="onSelection" component="logoInteracao" >
@@ -119,7 +108,6 @@
 			<bind role="stop" component="temperaturaPOA"/>
 		</link>
 
-
 		<link id="iniciarIcone" xconnector="timeStart1">
 			<linkParam name="vDelay1" value="5s"/>
 			<bind role="onBegin" component="videoPrincipal" />
@@ -130,7 +118,6 @@
 			<bind role="onEnd" component="videoPrincipal" />
 			<bind role="stop" component="logoInteracao" />
 		</link>
-
 
 		<link xconnector="onKeySelectionStart">
 			<bind role="onSelection" component="temperaturaJPA" >
@@ -155,8 +142,6 @@
 			<bind role="start" component="logoInteracao" />
 			<bind role="stop" component="temperaturaPOA"/>
 		</link>
-
-
-
+		
 	</body>
 </ncl>
