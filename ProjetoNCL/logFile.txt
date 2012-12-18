@@ -1,9 +1,9 @@
 ginga main() remote NCLFILE
-ginga main() COMMAND = 'C:\Program Files\TeleMidia\Ginga\ginga.exe' NCLFILE = 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl'
+ginga main() COMMAND = 'C:\Program Files\TeleMidia\Ginga\ginga.exe' NCLFILE = 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl'
 LocalScreenManager::createScreen argv[9]
 LocalScreenManager::createScreen PARSER argv[0] = 'C:\Program Files\TeleMidia\Ginga\ginga.exe'
 LocalScreenManager::createScreen PARSER argv[1] = '--ncl'
-LocalScreenManager::createScreen PARSER argv[2] = 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl'
+LocalScreenManager::createScreen PARSER argv[2] = 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl'
 LocalScreenManager::createScreen PARSER argv[3] = '--vmode'
 LocalScreenManager::createScreen PARSER argv[4] = '854x480'
 LocalScreenManager::createScreen PARSER argv[5] = '--disable-fkeys'
@@ -15,7 +15,7 @@ SDLDeviceScreen::getWidthResolution returns '854'
 SDLDeviceScreen::getHeightResolution returns '480'
 SDLDeviceScreen::initScreen renderer accelerated by hardware was created
 InputManager::initializeInputIntervalTime imperative = '0' declarative = '200'
-ginga main() NCLFILE = C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl
+ginga main() NCLFILE = C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl
 PresentationEngineManager::openNclFile document process time: 0
 ContextManager::addContextListener
 SystemInfo::getSystemLanguage can't find 'system.language, return por
@@ -29,29 +29,36 @@ PresentationContext::getPropertyValue prop 'default.focusBorderColor' == 'blue'
 PresentationContext::getPropertyValue prop 'default.focusBorderWidth' == '3'
 PresentationContext::getPropertyValue prop 'default.selBorderColor' == 'green'
 PrivateBaseContext::createPrivateBase '-1'
-FormatterMediator::printData(027E80F0) screenId: 0 baseId: -1 playerId: C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl devClass: 0 x: 0 y: 0 w: 854 h: 480 enableGfx: 1 parentDocId:  docId: 
-FormatterMediator::addDocument(027E80F0) call addDocument 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl'
+FormatterMediator::printData(02698D30) screenId: 0 baseId: -1 playerId: C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl devClass: 0 x: 0 y: 0 w: 854 h: 480 enableGfx: 1 parentDocId:  docId: 
+FormatterMediator::addDocument(02698D30) call addDocument 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl'
 PATH = [C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\]
 parseRegionBase
 >>region: rgTVparseRegion
 >>region: rgVideoparseRegion
->>region: rgBotaoInfoparseRegion
->>region: rItensMenuparseRegion
->>region: r1parseRegion
->>region: r2parseRegion
->>region: r3parseRegion
->>region: rMenuparseRegion
+>>region: rgImagemparseRegion
 parseDescriptorBase
->>descriptor: dTV
+>>descriptor: dVPrincipal
 parseDescriptor
->>descriptor: dVideo
+>>descriptor: dImagem
 parseDescriptor
->>descriptor: dImgInfo
-parseDescriptor
->>descriptor: dMenu
-parseDescriptor
+>>descriptorParam: 
+parseDescriptorParam
 parseConnectorBase
->>causalConnector: onKeySelection
+>>causalConnector: endEnd
+parseCausalConnector
+>>simpleCondition: 
+parseSimpleCondition
+>>simpleAction: 
+parseSimpleAction
+>>causalConnector: timeStart1
+parseCausalConnector
+>>connectorParam: 
+parseConnectorParam
+>>simpleCondition: 
+parseSimpleCondition
+>>simpleAction: 
+parseSimpleAction
+>>causalConnector: onKeySelectionStart
 parseCausalConnector
 >>connectorParam: 
 parseConnectorParam
@@ -65,7 +72,18 @@ parseSimpleAction
 parseSimpleAction
 parseMedia
 parseMedia
+parseProperty
+parseProperty
 parseMedia
+parseMedia
+parseProperty
+parseProperty
+parseMedia
+parseProperty
+parseProperty
+parseMedia
+parseProperty
+parseProperty
 posCompileContext
 posCompileContext
 parseLink
@@ -88,12 +106,88 @@ parseBindParam
 parseBind
 >>bind: 
 parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+iniciarIcone
+>>linkParam: 
+parseLinkParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+paraTudo
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
+parseLink
+
+>>bind: 
+parseBind
+>>bindParam: 
+parseBindParam
+>>bind: 
+parseBind
+>>bind: 
+parseBind
 parsePort
-parsePort
-PrivateBaseContext::addDocument id='parte2' url='C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl' all done
-FormatterMediator::getDepUriFromNode checking descriptor 'dImgInfo'
-FormatterMediator::getDepUriFromNode checking descriptor 'dVideo'
-FormatterMediator::getDepUriFromNode checking descriptor 'dMenu'
+PrivateBaseContext::addDocument id='parte2' url='C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl' all done
+FormatterMediator::getDepUriFromNode checking descriptor 'dVPrincipal'
+FormatterMediator::getDepUriFromNode checking descriptor 'dImagem'
+FormatterMediator::getDepUriFromNode checking descriptor 'dImagem'
+FormatterMediator::getDepUriFromNode checking descriptor 'dImagem'
+FormatterMediator::getDepUriFromNode checking descriptor 'dImagem'
+FormatterMediator::getDepUriFromNode checking descriptor 'dImagem'
 FormatterMultiDevice::addActiveUris activeBaseUri=C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\
 ExecutionObject::addEvent '-1_1' in '-1\'
 ExecutionObject::addPresentationEvent in '-1\'. Call transition manager addPresentationEvent for '-1_1' begin = '0'; end = '1.#INF' position = '-1'
@@ -104,52 +198,81 @@ FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-
 FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\'
 CompositeExecutionObject::getUncompiledLinks '-1\' has '0' uncompiled links
 FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\'
-FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\video\dVideo', perspective = '-1\parte2\video' and parent = '-1\parte2\'
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\video\dVideo'
-CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '2' uncompiled links
+FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\videoPrincipal\dVPrincipal', perspective = '-1\parte2\videoPrincipal' and parent = '-1\parte2\'
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\videoPrincipal\dVPrincipal'
+CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '10' uncompiled links
 FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
-Link::containsNode searching 'video' inside link '' (1 condition binds)
-Link::containsNode link '' has 'video' with descriptor = 'dVideo'
-CompositeExecutionObject::removeLinkUncompiled ''
-FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId ''
-CascadingDescriptor::~CascadingDescriptor(dVideo)
-ExecutionObject::addEvent 'video_0' in '-1\parte2\video\dVideo'
-FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\imgInfo\dImgInfo', perspective = '-1\parte2\imgInfo' and parent = '-1\parte2\'
-ExecutionObject::addEvent 'imgInfo_1' in '-1\parte2\imgInfo\dImgInfo'
-ExecutionObject::addPresentationEvent in '-1\parte2\imgInfo\dImgInfo'. Call transition manager addPresentationEvent for 'imgInfo_1' begin = '0'; end = '1.#INF' position = '-1'
-FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\imgMenu\dMenu', perspective = '-1\parte2\imgMenu' and parent = '-1\parte2\'
-ExecutionObject::addEvent 'imgMenu_1' in '-1\parte2\imgMenu\dMenu'
-ExecutionObject::addPresentationEvent in '-1\parte2\imgMenu\dMenu'. Call transition manager addPresentationEvent for 'imgMenu_1' begin = '0'; end = '1.#INF' position = '-1'
-FormatterConverter::compileExecutionObjectLinks LINKCOMPILED ''
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'logoInteracao' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
 FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
-Link::containsNode searching 'video' inside link '' (1 condition binds)
-Link::containsNode link '' has 'video' with descriptor = 'dVideo'
-CompositeExecutionObject::removeLinkUncompiled ''
-FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId ''
-CascadingDescriptor::~CascadingDescriptor(dVideo)
-CascadingDescriptor::~CascadingDescriptor(dMenu)
-CascadingDescriptor::~CascadingDescriptor(dImgInfo)
-FormatterConverter::compileExecutionObjectLinks LINKCOMPILED ''
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\video\dVideo'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaGRU' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink 'iniciarIcone' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link 'iniciarIcone' (1 condition binds)
+Link::containsNode link 'iniciarIcone' has 'videoPrincipal' with descriptor = 'dVPrincipal'
+CompositeExecutionObject::removeLinkUncompiled 'iniciarIcone'
+FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId 'iniciarIcone'
+CascadingDescriptor::~CascadingDescriptor(dVPrincipal)
+ExecutionObject::addEvent 'videoPrincipal_1' in '-1\parte2\videoPrincipal\dVPrincipal'
+ExecutionObject::addPresentationEvent in '-1\parte2\videoPrincipal\dVPrincipal'. Call transition manager addPresentationEvent for 'videoPrincipal_1' begin = '0'; end = '1.#INF' position = '-1'
+FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\logoInteracao\dImagem', perspective = '-1\parte2\logoInteracao' and parent = '-1\parte2\'
+ExecutionObject::addEvent 'logoInteracao_1' in '-1\parte2\logoInteracao\dImagem'
+ExecutionObject::addPresentationEvent in '-1\parte2\logoInteracao\dImagem'. Call transition manager addPresentationEvent for 'logoInteracao_1' begin = '0'; end = '1.#INF' position = '-1'
+FormatterConverter::compileExecutionObjectLinks LINKCOMPILED 'iniciarIcone'
+FormatterConverter::compileExecutionObjectLinks processing ncmLink 'paraTudo' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link 'paraTudo' (1 condition binds)
+Link::containsNode link 'paraTudo' has 'videoPrincipal' with descriptor = 'dVPrincipal'
+CompositeExecutionObject::removeLinkUncompiled 'paraTudo'
+FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId 'paraTudo'
+CascadingDescriptor::~CascadingDescriptor(dVPrincipal)
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+FormatterConverter::compileExecutionObjectLinks LINKCOMPILED 'paraTudo'
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaGRU' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'videoPrincipal' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dVPrincipal'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'videoPrincipal' src
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\videoPrincipal\dVPrincipal'
 CompositeExecutionObject::getUncompiledLinks '-1\' has '0' uncompiled links
 FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\'
-ExecutionObject::addEvent 'video_1' in '-1\parte2\video\dVideo'
-ExecutionObject::addPresentationEvent in '-1\parte2\video\dVideo'. Call transition manager addPresentationEvent for 'video_1' begin = '0'; end = '1.#INF' position = '-1'
-CascadingDescriptor::~CascadingDescriptor(dImgInfo)
-FormatterMediator::initializeSettingNodes checking 'imgInfo'
-FormatterMediator::initializeSettingNodes checking 'video'
-FormatterMediator::initializeSettingNodes checking 'imgMenu'
+FormatterMediator::initializeSettingNodes checking 'videoPrincipal'
+FormatterMediator::initializeSettingNodes checking 'logoInteracao'
+FormatterMediator::initializeSettingNodes checking 'menu'
+FormatterMediator::initializeSettingNodes checking 'temperaturaGRU'
+FormatterMediator::initializeSettingNodes checking 'temperaturaJPA'
+FormatterMediator::initializeSettingNodes checking 'temperaturaPOA'
 PresentationEngineManager::startPresentation
 PresentationEngineManager::getNclPlayer
-PresentationEngineManager::startPresentation play 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte2.ncl'
+PresentationEngineManager::startPresentation play 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\parte3.ncl'
 FormatterScheduler::startDocument Through event 'parte2_1'
 PresentationContext::getPropertyValue prop 'default.focusBorderTransparency' == '0'
 PresentationContext::getPropertyValue prop 'default.focusBorderColor' == 'blue'
 PresentationContext::getPropertyValue prop 'default.focusBorderWidth' == '3'
 PresentationContext::getPropertyValue prop 'default.selBorderColor' == 'green'
-FormatterScheduler::runAction acquiring player for '-1\parte2\video\dVideo' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterScheduler::runAction acquiring player for '-1\parte2\videoPrincipal\dVPrincipal' PlayerAdapterManager::getPlayerClass is finding a suitable player
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
-RuleAdapter::adaptDescriptor for '-1\parte2\video\dVideo'
+RuleAdapter::adaptDescriptor for '-1\parte2\videoPrincipal\dVPrincipal'
 RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
 AVPlayer::createProvider 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4'
@@ -170,26 +293,26 @@ Obtained channels = '2'
 Obtained frequency = '48000'
 SDL2ffmpeg::openStreams 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4' doesn't have any subtitle stream!
 AVPlayer::createProvider 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4' all done
-FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4' object = '-1\parte2\video\dVideo' objectDevice = '0'
-ExecutionObject::prepare(-1\parte2\video\dVideo) 2nd call addEventListener '027F5DA0' or '027F5E7C'
-Player::setScope 'video'
-FormatterLayout::prepareFormatterRegion for '-1\parte2\video\dVideo'
-FormatterRegion::prepareOutputDisplay '027FEDE0' created with left   = '0' top    = '0' width  = '854' height = '480' 
-SDLWindow::renderFrom(027FEDE0) Warning! NULL underlying surface!
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4' object = '-1\parte2\videoPrincipal\dVPrincipal' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\videoPrincipal\dVPrincipal) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'videoPrincipal'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\videoPrincipal\dVPrincipal'
+FormatterRegion::prepareOutputDisplay '026B22B0' created with left   = '0' top    = '0' width  = '854' height = '480' 
+SDLWindow::renderFrom(026B22B0) Warning! NULL underlying surface!
 FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
 AVPlayer::play() calling provider play over
 SDLVideoProvider::playOver
 AVPlayer::play(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) all done!
-FormatterScheduler::eventStateChanged 'video_1' transition '0'
-FormatterMultiDevice::showObject '-1\parte2\video\dVideo' class '0'
-FormatterRegion::setRegionVisibility 'dVideo): '027FEDE0' SHOW
-FormatterFocusManager::showObject 'video' with focus index = '' current focus = ''
+FormatterScheduler::eventStateChanged 'videoPrincipal_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\videoPrincipal\dVPrincipal' class '0'
+FormatterRegion::setRegionVisibility 'dVPrincipal): '026B22B0' SHOW
+FormatterFocusManager::showObject 'videoPrincipal' with focus index = '' current focus = ''
 PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
-EntryEventListener::eventStateChanged parent id = '-1\parte2\' parent is running = '1' interface id = 'pInicio' events running = '0'
+EntryEventListener::eventStateChanged parent id = '-1\parte2\' parent is running = '1' interface id = 'pVideoPrincipal' events running = '0'
 PresentationEngineManager::updateStatus
 FormatterScheduler::eventStateChanged 'parte2_1' transition '0'
-FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\video\dVideo' because next transition = '1.#INF' 
-FormatterScheduler::runAction takes '84' ms to start '-1\parte2\video\dVideo'
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\videoPrincipal\dVPrincipal' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '79' ms to start '-1\parte2\videoPrincipal\dVPrincipal'
 LinkSimpleAction::~LinkSimpleAction
 SDL2ffmpeg::play called
 SDL2ffmpeg::prepare Video frame rate is '7481/250'
@@ -197,212 +320,602 @@ SDL2ffmpeg::prepare Video average frame rate is '7481/250'
 SDL2ffmpeg::prepare Video time base frame rate is '1/29924'
 AVPlayer::run
 AVPlayer::run total media time that will be considered  is '338.625'
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\imgInfo\dImgInfo'
-CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '0' uncompiled links
-FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\parte2\'
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\'
+FormatterScheduler::startDocument Through event 'parte2_1' started '1' events
+PresentationEngineManager::waitUnlockCondition
+SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) master_clock = '0.715001' (duration = '338625')
+SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) current_pts = '0.701778' (duration = '338625')
+AVPlayer::run dur = '338.625' curMediaTime = '0.704' total = '338.625' for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) 'iniciarIcone'
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '8' uncompiled links
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'logoInteracao' with descriptor = 'dImagem'
+CompositeExecutionObject::removeLinkUncompiled ''
+FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId ''
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+ExecutionObject::addEvent 'logoInteracao_0_BLUE' in '-1\parte2\logoInteracao\dImagem'
+FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\temperaturaGRU\dImagem', perspective = '-1\parte2\temperaturaGRU' and parent = '-1\parte2\'
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\temperaturaGRU\dImagem'
+CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '7' uncompiled links
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaGRU' with descriptor = 'dImagem'
+CompositeExecutionObject::removeLinkUncompiled ''
+FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId ''
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+ExecutionObject::addEvent 'temperaturaGRU_0_CURSOR_RIGHT' in '-1\parte2\temperaturaGRU\dImagem'
+FormatterConverter::getExecutionObjectFromPerspective Adding_object with id = '-1\parte2\temperaturaJPA\dImagem', perspective = '-1\parte2\temperaturaJPA' and parent = '-1\parte2\'
+ExecutionObject::addEvent 'temperaturaJPA_1' in '-1\parte2\temperaturaJPA\dImagem'
+ExecutionObject::addPresentationEvent in '-1\parte2\temperaturaJPA\dImagem'. Call transition manager addPresentationEvent for 'temperaturaJPA_1' begin = '0'; end = '1.#INF' position = '-1'
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+ExecutionObject::addEvent 'temperaturaGRU_1' in '-1\parte2\temperaturaGRU\dImagem'
+ExecutionObject::addPresentationEvent in '-1\parte2\temperaturaGRU\dImagem'. Call transition manager addPresentationEvent for 'temperaturaGRU_1' begin = '0'; end = '1.#INF' position = '-1'
+FormatterConverter::compileExecutionObjectLinks LINKCOMPILED ''
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'temperaturaGRU' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'temperaturaGRU' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'temperaturaGRU' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'temperaturaGRU' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaGRU' with descriptor = 'dImagem'
+CompositeExecutionObject::removeLinkUncompiled ''
+FormatterLinkConverter::createCausalLink inside '-1\parte2\' from ncmlinkId ''
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+ExecutionObject::addEvent 'temperaturaGRU_0_RED' in '-1\parte2\temperaturaGRU\dImagem'
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+FormatterConverter::compileExecutionObjectLinks LINKCOMPILED ''
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'temperaturaGRU' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'temperaturaGRU' src
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\temperaturaGRU\dImagem'
 CompositeExecutionObject::getUncompiledLinks '-1\' has '0' uncompiled links
 FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\'
-FormatterScheduler::runAction acquiring player for '-1\parte2\imgInfo\dImgInfo' PlayerAdapterManager::getPlayerClass is finding a suitable player
+CascadingDescriptor::~CascadingDescriptor(dImagem)
+FormatterConverter::compileExecutionObjectLinks LINKCOMPILED ''
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\' link may be removed in a deepest compilation
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'logoInteracao' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'logoInteracao' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'logoInteracao' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaJPA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'logoInteracao' src
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\' link may be removed in a deepest compilation
+FormatterConverter::compileExecutionObjectLinks processing ncmLink '' inside '-1\parte2\'
+Link::containsNode searching 'logoInteracao' inside link '' (1 condition binds)
+Link::containsNode link '' has 'temperaturaPOA' with descriptor = 'dImagem'
+FormatterConverter::compileExecutionObjectLinks can't process ncmLink '' inside '-1\parte2\'  because '' does not contain 'logoInteracao' src
+FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::getUncompiledLinks '-1\' has '0' uncompiled links
+FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
-RuleAdapter::adaptDescriptor for '-1\parte2\imgInfo\dImgInfo'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
 RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
 ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
 ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
-FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\imgInfo\dImgInfo' objectDevice = '0'
-ExecutionObject::prepare(-1\parte2\imgInfo\dImgInfo) 2nd call addEventListener '027F5DA0' or '027F5E7C'
-Player::setScope 'imgInfo'
-FormatterLayout::prepareFormatterRegion for '-1\parte2\imgInfo\dImgInfo'
-FormatterRegion::prepareOutputDisplay '028054D8' created with left   = '711' top    = '0' width  = '100' height = '100' 
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026C2038' created with left   = '731' top    = '24' width  = '80' height = '80' 
 FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
-FormatterScheduler::eventStateChanged 'imgInfo_1' transition '0'
-FormatterMultiDevice::showObject '-1\parte2\imgInfo\dImgInfo' class '0'
-FormatterRegion::setRegionVisibility 'dImgInfo): '028054D8' SHOW
-FormatterFocusManager::showObject 'imgInfo' with focus index = '' current focus = ''
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026C2038' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
 PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
-EntryEventListener::eventStateChanged parent id = '-1\parte2\' parent is running = '1' interface id = 'pImgPularInfo' events running = '1'
-PresentationEngineManager::updateStatus
-FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\imgInfo\dImgInfo' because next transition = '1.#INF' 
-FormatterScheduler::runAction takes '21' ms to start '-1\parte2\imgInfo\dImgInfo'
-LinkSimpleAction::~LinkSimpleAction
-FormatterScheduler::startDocument Through event 'parte2_1' started '2' events
-PresentationEngineManager::waitUnlockCondition
-SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) master_clock = '0.776' (duration = '338625')
-SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) current_pts = '0.768614' (duration = '338625')
-AVPlayer::run dur = '338.625' curMediaTime = '0.776' total = '338.625' for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4'
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\video\dVideo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'video'
-FormatterFocusManager::enterSelection(027EDA18): 'video'
-SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) master_clock = '4.535' (duration = '338625')
-SDL2ffmpeg::getPosition(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\video.mp4) current_pts = '4.51143' (duration = '338625')
-ExecutionObject::selectionEvent(-1\parte2\video\dVideo) event 'video_0' has selCode = '1' (looking for key code '1'
-SDLWindow::renderFrom(027FEDE0) Warning! NULL underlying surface!
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '16' ms to start '-1\parte2\logoInteracao\dImagem'
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
 LinkSimpleAction::~LinkSimpleAction
 LinkCompoundAction::run '2' actions
-LinkCompoundAction::run '2' actions
-FormatterScheduler::runAction acquiring player for '-1\parte2\imgInfo\dImgInfo' FormatterScheduler::eventStateChanged 'imgInfo_1' transition '1'
-FormatterScheduler::eventStateChanged 'imgInfo_1' STOPS: hideObject '-1\parte2\imgInfo\dImgInfo
-FormatterMultiDevice::hideObject '-1\parte2\imgInfo\dImgInfo'
-FormatterRegion::setRegionVisibility(dImgInfo): '028054D8' HIDE
-SDLWindow::~SDLWindow(028054D8) all done
-EntryEventListener::eventStateChanged parent id = '-1\parte2\' parent is running = '1' interface id = 'pImgPularInfo' events running = '2CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
-'
-PresentationEngineManager::updateStatus
-CompositeExecutionObject::listRunningObjects for '-1\parte2\': '-1\parte2\video\dVideo',  runingEvents->size = '1'
-CompositeExecutionObject::listPendingLinks for '-1\parte2\': '',  pendingLinks.size = '1'
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\imgMenu\dMenu'
-CompositeExecutionObject::getUncompiledLinks '-1\parte2\' has '0' uncompiled links
-FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\parte2\'
-FormatterConverter::compileExecutionObjectLinks object = '-1\parte2\'
-CompositeExecutionObject::getUncompiledLinks '-1\' has '0' uncompiled links
-FormatterConverter::compileExecutionObjectLinks all links are already compiled for '-1\'
-FormatterScheduler::runAction acquiring player for '-1\parte2\imgMenu\dMenu' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
-RuleAdapter::adaptDescriptor for '-1\parte2\imgMenu\dMenu'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
 RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
 FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
-ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\menu.png'
-ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\menu.png' ALL DONE
-FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\menu.png' object = '-1\parte2\imgMenu\dMenu' objectDevice = '0'
-ExecutionObject::prepare(-1\parte2\imgMenu\dMenu) 2nd call addEventListener '027F5DA0' or '027F5E7C'
-Player::setScope 'imgMenu'
-FormatterLayout::prepareFormatterRegion for '-1\parte2\imgMenu\dMenu'
-FormatterRegion::prepareOutputDisplay '02807EB8' created with left   = '489' top    = '24' width  = '330' height = '255' 
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8FD0' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026B8FD0) Warning! NULL underlying surface!
 FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
-FormatterScheduler::eventStateChanged 'imgMenu_1' transition '0'
-FormatterMultiDevice::showObject '-1\parte2\imgMenu\dMenu' class '0'
-FormatterRegion::setRegionVisibility 'dMenu): '02807EB8' SHOW
-FormatterFocusManager::showObject 'imgMenu' with focus index = '' current focus = ''
-PresentationContext::getPropertyValue prop 'service.currentKeyMaster' == ''
-FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\imgMenu\dMenu' because next transition = '1.#INF' 
-FormatterScheduler::runAction takes '14' ms to start '-1\parte2\imgMenu\dMenu'
-FormatterScheduler::runAction acquiring player for '-1\parte2\imgMenu\dMenu' FormatterScheduler::eventStateChanged 'imgMenu_1' transition '1'
-FormatterScheduler::eventStateChanged 'imgMenu_1' STOPS: hideObject '-1\parte2\imgMenu\dMenu
-FormatterMultiDevice::hideObject '-1\parte2\imgMenu\dMenu'
-FormatterRegion::setRegionVisibility(dMenu): '02807EB8' HIDE
-SDLWindow::~SDLWindow(02807EB8) all done
-CompositeExecutionObject::listRunningObjects for '-1\parte2\': '-1\parte2\video\dVideo',  runingEvents->size = '1'
-PresentationEngineManager::eventReceived
-PresentationEngineManager::eventReceived: NOTIFY_STOP
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026B8FD0' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8FD0' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '9' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026C2038' HIDE
+SDLWindow::~SDLWindow(026C2038) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026C2038' created with left   = '731' top    = '24' width  = '80' height = '80' 
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026C2038' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '6' ms to start '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8FD0' HIDE
+SDLWindow::~SDLWindow(026B8FD0) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026C2038' HIDE
+SDLWindow::~SDLWindow(026C2038) all done
+CompositeExecutionObject::listRunningObjects for '-1\parte2\': '-1\parte2\videoPrincipal\dVPrincipal',  runingEvents->size = '1'
 CompositeExecutionObject::listPendingLinks for '-1\parte2\': '',  pendingLinks.size = '1'
 CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
-FormatterScheduler::runAction acquiring player for '-1\parte2\imgInfo\dImgInfo' FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '027FEF68'
-RuleAdapter::adaptDescriptor for '-1\parte2\imgInfo\dImgInfo'
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
 RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
-FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '027FEF68'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8890' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026B8890) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026B8890' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8890' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '14' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
 ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
 ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
-FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\imgInfo\dImgInfo' objectDevice = '0'
-ExecutionObject::prepare(-1\parte2\imgInfo\dImgInfo) 2nd call addEventListener '027F5DA0' or '027F5E7C'
-Player::setScope 'imgInfo'
-FormatterLayout::prepareFormatterRegion for '-1\parte2\imgInfo\dImgInfo'
-FormatterRegion::prepareOutputDisplay '02807CB0' created with left   = '711' top    = '0' width  = '100' height = '100' 
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026C5700' created with left   = '731' top    = '24' width  = '80' height = '80' 
 FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
-FormatterScheduler::eventStateChanged 'imgInfo_1' transition '0'
-FormatterMultiDevice::showObject '-1\parte2\imgInfo\dImgInfo' class '0'
-FormatterRegion::setRegionVisibility 'dImgInfo): '02807CB0' SHOW
-FormatterFocusManager::showObject 'imgInfo' with focus index = '' current focus = ''
-PresentationContext::getPropertyValue prop 'service.currentKeyMaster' == ''
-EntryEventListener::eventStateChanged parent id = '-1\parte2\' parent is running = '1' interface id = 'pImgPularInfo' events running = '1'
-PresentationEngineManager::updateStatus
-FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\imgInfo\dImgInfo' because next transition = '1.#INF' 
-FormatterScheduler::runAction takes '15' ms to start '-1\parte2\imgInfo\dImgInfo'
-PresentationEngineManager::presentationCompleted for 'pImgPularInfo'
-PresentationEngineManager::releaseFormatter
-PresentationEngineManager::checkStatus
-PresentationEngineManager::checkStatus: running
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgMenu\dMenu'
-FormatterFocusManager::tapObject 
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = 'imgInfo'
-FormatterFocusManager::enterSelection(027EDA18): 'imgInfo'
-InputManger::dispatchEvent code '117' screen id = '0'
-FormatterMultiDevice::tapObject '-1\parte2\imgInfo\dImgInfo'
-FormatterFocusManager::tapObject 
-FormatterFocusManager::exitSelection(027EDA18)
-PresentationContext::setPropertyValue propName = 'service.currentKeyMaster' propValue = ''
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026C5700' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '8' ms to start '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8890' HIDE
+SDLWindow::~SDLWindow(026B8890) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8F38' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026B8F38) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+SDLFontProvider::playOver parent = '026B8F38' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8F38' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '10' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026C5700' HIDE
+SDLWindow::~SDLWindow(026C5700) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C55F8'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C55F8'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8918' created with left   = '731' top    = '24' width  = '80' height = '80' 
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8918' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '9' ms to start '-1\parte2\logoInteracao\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8F38' HIDE
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+SDLWindow::~SDLWindow(026B8F38) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8890' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026B8890) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026B8890' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8890' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '3' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8918' HIDE
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+SDLWindow::~SDLWindow(026B8918) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8918' created with left   = '731' top    = '24' width  = '80' height = '80' 
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8918' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '6' ms to start '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8890' HIDE
+SDLWindow::~SDLWindow(026B8890) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026C5770' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026C5770) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026C5770' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026C5770' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '2' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8918' HIDE
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+SDLWindow::~SDLWindow(026B8918) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8FC0' created with left   = '731' top    = '24' width  = '80' height = '80' 
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8FC0' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '9' ms to start '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026C5770' HIDE
+SDLWindow::~SDLWindow(026C5770) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026C5770' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026C5770) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026C5770' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026C5770' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '2' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8FC0' HIDE
+SDLWindow::~SDLWindow(026B8FC0) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' player visibility = '1' event key code = '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_CURSOR_RIGHT' has selCode = '90' (looking for key code '98'
+ExecutionObject::selectionEvent(-1\parte2\temperaturaGRU\dImagem) event 'temperaturaGRU_0_RED' has selCode = '98' (looking for key code '98'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+RuleAdapter::adaptDescriptor for '-1\parte2\logoInteracao\dImagem'
+CompositeExecutionObject::linkEvaluationFinished(RuleAdapter::adaptDescriptor first unsolved descriptor -1\parte2\address ') '00000000''
+
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '026C35A8'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'height' with value '80'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png) property 'width' with value '80'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png'
+ImagePlayerAdapter::createPlayer 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' ALL DONE
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'height' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' set property 'width' value '80'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' object = '-1\parte2\logoInteracao\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\logoInteracao\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'logoInteracao'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8FC0' created with left   = '731' top    = '24' width  = '80' height = '80' 
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\logoInteracao\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8FC0' SHOW
+FormatterFocusManager::showObject 'logoInteracao' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\logoInteracao\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '11' ms to start '-1\parte2\logoInteracao\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '1'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' STOPS: hideObject '-1\parte2\temperaturaGRU\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026C5770' HIDE
+SDLWindow::~SDLWindow(026C5770) all done
+FormatterPlayerAdapter::userEventReceived for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\interactive.png' player visibility = '1' event key code = '101'
+ExecutionObject::selectionEvent(-1\parte2\logoInteracao\dImagem) event 'logoInteracao_0_BLUE' has selCode = '101' (looking for key code '101'
+LinkSimpleAction::~LinkSimpleAction
+LinkCompoundAction::run '2' actions
+FormatterScheduler::runAction acquiring player for '-1\parte2\temperaturaGRU\dImagem' PlayerAdapterManager::getPlayerClass is finding a suitable player
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+RuleAdapter::adaptDescriptor for '-1\parte2\temperaturaGRU\dImagem'
+RuleAdapter::adaptDescriptor first unsolved descriptor address '00000000'
+FormatterPlayerAdapter::hasPrepared return false because object = '00000000' and player = '00000000'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) param 'transparency' with value '20%'
+FormatterPlayerAdapter::prepareProperties parent opacity is '1' original transparency property is '20' new value is '0.2'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontSize' with value '20'
+FormatterPlayerAdapter::prepareProperties(C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt) property 'fontWeight' with value 'bold'
+CompositeExecutionObject::linkEvaluationFinished(-1\parte2\) ''
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontSize' value '20'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' set property 'fontWeight' value 'bold'
+FormatterPlayerAdapter::createPlayer for 'C:\Users\Bruno\Documents\GitHub\pasii\ProjetoNCL\media\gru.txt' object = '-1\parte2\temperaturaGRU\dImagem' objectDevice = '0'
+ExecutionObject::prepare(-1\parte2\temperaturaGRU\dImagem) 2nd call addEventListener '026ABD10' or '026ABDEC'
+Player::setScope 'temperaturaGRU'
+FormatterLayout::prepareFormatterRegion for '-1\parte2\temperaturaGRU\dImagem'
+FormatterRegion::prepareOutputDisplay '026B8F38' created with left   = '611' top    = '24' width  = '200' height = '200' 
+SDLWindow::renderFrom(026B8F38) Warning! NULL underlying surface!
+FormatterLayout::prepareFormatterRegion deviceRegion class is '0'
+PlainTxtPlayer::play ok
+SDLFontProvider::playOver parent = '026B8F38' bounds = '611,24,200,200' text rectangle = '0, 0, 75, 25'
+FormatterScheduler::eventStateChanged 'temperaturaGRU_1' transition '0'
+FormatterMultiDevice::showObject '-1\parte2\temperaturaGRU\dImagem' class '0'
+FormatterRegion::setRegionVisibility 'dImagem): '026B8F38' SHOW
+FormatterFocusManager::showObject 'temperaturaGRU' with focus index = '' current focus = ''
+PresentationContext::getPropertyValue prop 'service.currentKeyMaster' has a NULL value
+FormatterPlayerAdapter::checkAnchorMonitor can't create TIME NominalEventMonitor for '-1\parte2\temperaturaGRU\dImagem' because next transition = '1.#INF' 
+FormatterScheduler::runAction takes '9' ms to start '-1\parte2\temperaturaGRU\dImagem'
+FormatterScheduler::runAction acquiring player for '-1\parte2\logoInteracao\dImagem' FormatterScheduler::eventStateChanged 'logoInteracao_1' transition '1'
+FormatterScheduler::eventStateChanged 'logoInteracao_1' STOPS: hideObject '-1\parte2\logoInteracao\dImagem
+FormatterMultiDevice::hideObject '-1\parte2\logoInteracao\dImagem'
+FormatterRegion::setRegionVisibility(dImagem): '026B8FC0' HIDE
+SDLWindow::~SDLWindow(026B8FC0) all done
